@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>zttc.itat.maven</groupId><!--groupId 就是我们公司开发的某一个项目，-->
+  <artifactId>maven-ch01</artifactId><!--项目里面具体的模块-->
+  <version>0.0.1-SNAPSHOT</version><!--版本的名称，这里是快照版本-->
+  
+  <dependencies>  <!--所有我们加的依赖-->
+	<dependency>			  <!--这是某一个依赖-->
+		<groupId>junit</groupId>						<!--这个依赖我需要指明他的坐标，什么是坐标，gav，即groupId/artifactId/version-->
+		<artifactId>junit</artifactId>
+		<version>4.10</version>
+	</dependency>
+  </dependencies>
+</project>
