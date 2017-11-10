@@ -1,1 +1,7 @@
 /target/
+.idea/
+.classpath
+*.iml
+*.ipr
+*.iws
+.project

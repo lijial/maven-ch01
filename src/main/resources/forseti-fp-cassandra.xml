@@ -1,0 +1,6 @@
+<note>
+    <to>George</to>
+    <user>${username}</user>
+    <pass>${pass}</pass>
+    <body>Don't forget the meeting!</body>
+</note>

@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>zttc.itat.maven</groupId><!--groupId ¾ÍÊÇÎÒÃÇ¹«Ë¾¿ª·¢µÄÄ³Ò»¸öÏîÄ¿£¬-->
-  <artifactId>maven-ch01</artifactId><!--ÏîÄ¿ÀïÃæ¾ßÌåµÄÄ£¿é-->
-  <version>0.0.1-SNAPSHOT</version><!--°æ±¾µÄÃû³Æ£¬ÕâÀïÊÇ¿ìÕÕ°æ±¾-->
-  
-  <dependencies>  <!--ËùÓÐÎÒÃÇ¼ÓµÄÒÀÀµ-->
-	<dependency>			  <!--ÕâÊÇÄ³Ò»¸öÒÀÀµ-->
-		<groupId>junit</groupId>						<!--Õâ¸öÒÀÀµÎÒÐèÒªÖ¸Ã÷ËûµÄ×ø±ê£¬Ê²Ã´ÊÇ×ø±ê£¬gav£¬¼´groupId/artifactId/version-->
-		<artifactId>junit</artifactId>
-		<version>4.10</version>
-	</dependency>
-  </dependencies>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>zttc.itat.maven</groupId><!--groupId å°±æ˜¯æˆ‘ä»¬å…¬å¸å¼€å‘çš„æŸä¸€ä¸ªé¡¹ç›®ï¼Œ-->
+    <artifactId>maven-ch01</artifactId><!--é¡¹ç›®é‡Œé¢å…·ä½“çš„æ¨¡å—-->
+    <version>0.0.1-SNAPSHOT</version><!--ç‰ˆæœ¬çš„åç§°ï¼Œè¿™é‡Œæ˜¯å¿«ç…§ç‰ˆæœ¬-->
+
+    <dependencies>  <!--æ‰€æœ‰æˆ‘ä»¬åŠ çš„ä¾èµ–-->
+        <dependency>			  <!--è¿™æ˜¯æŸä¸€ä¸ªä¾èµ–-->
+            <groupId>junit</groupId>						<!--è¿™ä¸ªä¾èµ–æˆ‘éœ€è¦æŒ‡æ˜Žä»–çš„åæ ‡ï¼Œä»€ä¹ˆæ˜¯åæ ‡ï¼Œgavï¼Œå³groupId/artifactId/version-->
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <filters>
+            <filter>conf.properties</filter>
+        </filters>
+        <!--æŒ‡å®šèµ„æºæ–‡ä»¶ä½ç½®-->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <!--å¯ä»¥åœ¨æ­¤é…ç½®éœ€è¦è¢«æ›¿æ¢å˜é‡çš„æ–‡ä»¶-->
+                <includes>
+                    <include>*.xml</include>
+                    <include>*.properties</include>
+                </includes>
+                <!--å¼€å¯filteringåŠŸèƒ½  -->
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>
